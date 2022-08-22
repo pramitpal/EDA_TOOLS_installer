@@ -95,6 +95,7 @@ cd ..
 echo "#######################################################"
 echo "#--------Setting ngspice simulation mode to HS--------#"
 echo "#######################################################"
+mkdir ~/.xschem/simulations
 cd ~/.xschem/simulations
 echo "set ngbehavior=hs" > .spiceinit
 cd ~/EDA_TOOLS/
