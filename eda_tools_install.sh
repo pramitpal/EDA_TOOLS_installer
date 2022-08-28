@@ -113,10 +113,14 @@ cd gaw3-20200922
 make -j$(nproc)
 sudo make install
 cd ..
-
+echo "#######################################################"
+echo "#-------Opening GAW Close it to continue---------------#"
+echo "#######################################################"
+gaw
 echo "#######################################################"
 echo "#-------Setting GAW to work with xschem---------------#"
 echo "#######################################################"
+
 sed -i 's/up_listenPort = 0/up_listenPort = 2020/' ~/.gaw/gawrc
 
 clear
